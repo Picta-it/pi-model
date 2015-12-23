@@ -34,21 +34,19 @@ The model builder accepts the following options :
 {
   'name' : String,
   'description' : Object,
-  'schema' : Object,
   'validator' : Function
 }
 ```
 
 - `name` : String used to define the model
 - `description` : Object describing custom information of the model
-- `schema` : Object used to describe data format
-- `validator` : Class used to validate data over the schema
+- `validator` : Instance used to validate data over the schema
 
 ### Validator
 
 You can use (pi-validator-tv4)[https://www.npmjs.com/package/pi-validator-tv4] if needed. It is a simple encapsulation of tv4 (validation with JSON schema).
 
-#### Customize
+#### Create a custom validator
 
 If you need to create your own validator, you can base extend (pi-validator)[https://www.npmjs.com/package/pi-validator].
 
