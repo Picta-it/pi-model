@@ -1,0 +1,38 @@
+{
+  "name": "pi-model",
+  "version": "0.2.0",
+  "description": "A model description validated",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Picta-it/pi-model.git"
+  },
+  "keywords": [
+    "model",
+    "picta",
+    "data",
+    "database"
+  ],
+  "author": "Juaniyyoo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Picta-it/pi-model/issues"
+  },
+  "homepage": "https://github.com/Picta-it/pi-model#readme",
+  "dependencies": {
+    "lodash": "^3.10.1"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^1.1.1",
+    "gulp-istanbul": "^0.10.3",
+    "gulp-mocha": "^2.2.0",
+    "lodash": "^3.10.1",
+    "mocha": "^2.3.4"
+  }
+}
