@@ -1,6 +1,6 @@
 {
   "name": "pi-model",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A model description validated",
   "main": "index.js",
   "scripts": {
@@ -29,6 +29,7 @@
   "devDependencies": {
     "chai": "^3.4.1",
     "gulp": "^3.9.0",
+    "gulp-coveralls": "^0.1.4",
     "gulp-eslint": "^1.1.1",
     "gulp-istanbul": "^0.10.3",
     "gulp-mocha": "^2.2.0",

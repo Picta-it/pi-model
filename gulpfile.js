@@ -1,9 +1,10 @@
-var fs       = require('fs'),
-    gulp     = require('gulp'),
-    istanbul = require('gulp-istanbul'),
-    mocha    = require('gulp-mocha'),
-    eslint   = require('gulp-eslint'),
-    eslintrc = JSON.parse(fs.readFileSync('./.eslintrc', 'utf8'));
+var fs        = require('fs'),
+    gulp      = require('gulp'),
+    istanbul  = require('gulp-istanbul'),
+    mocha     = require('gulp-mocha'),
+    eslint    = require('gulp-eslint'),
+    eslintrc  = JSON.parse(fs.readFileSync('./.eslintrc', 'utf8')),
+    coveralls = require('gulp-coveralls');
 
 gulp.task('pre-test', function () {
   return gulp.src(['lib/**/*.js', 'app/**/*.js'])
@@ -37,4 +38,10 @@ gulp.task('lint', function () {
       // To have the process exit with an error code (1) on
       // lint error, return the stream and pipe to failAfterError last.
       .pipe(eslint.failAfterError());
+});
+
+gulp.task('coveralls', function () {  
+  if (!process.env.CI) return;
+  return gulp.src('./coverage/lcov.info')
+    .pipe(coveralls());
 });
