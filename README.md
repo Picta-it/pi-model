@@ -1,3 +1,7 @@
+![Travis-ci builds](https://travis-ci.org/Picta-it/pi-model.svg?branch=develop)
+![NPM version](https://img.shields.io/npm/v/koa.svg?style=flat-square)
+![Coverage](https://img.shields.io/coveralls/picta-it/pi-model/develop.svg?style=flat-square)
+
 # PiModel
 
 PiModel is a simple data model representation that allows data validation and some basic features.
