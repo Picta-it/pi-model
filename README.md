@@ -1,5 +1,5 @@
 [![NPM version](https://img.shields.io/npm/v/pi-model.svg?style=flat-square)](https://www.npmjs.com/package/pi-model)
-[![Build Status](https://travis-ci.org/Picta-it/pi-model.svg?branch=develop)](https://travis-ci.org/juaniyyoo/pi-model)
+[![Build Status](https://travis-ci.org/Picta-it/pi-model.svg?branch=master)](https://travis-ci.org/juaniyyoo/pi-model)
 [![Coverage Status](https://coveralls.io/repos/Picta-it/pi-model/badge.svg?branch=master&service=github)](https://coveralls.io/github/Picta-it/pi-model?branch=master)
 
 # PiModel
@@ -48,10 +48,10 @@ The model builder accepts the following options :
 
 ### Validator
 
-You can use (pi-validator-tv4)[https://www.npmjs.com/package/pi-validator-tv4] if needed. It is a simple encapsulation of tv4 (validation with JSON schema).
+You can use [pi-validator-tv4](https://www.npmjs.com/package/pi-validator-tv4) if needed. It is a simple encapsulation of tv4 (validation with JSON schema).
 
 #### Create a custom validator
 
-If you need to create your own validator, you can base extend (pi-validator)[https://www.npmjs.com/package/pi-validator].
+If you need to create your own validator, you can base extend [pi-validator](https://www.npmjs.com/package/pi-validator).
 
 It is an abstraction of the validator.
