@@ -4,7 +4,8 @@ require('chai').should();
 
 var pwd     = process.env.PWD,
     path    = require('path'),
-    Builder = require(path.join(pwd, 'app/modelBuilder'));
+    Builder = require(path.join(pwd, 'app/modelBuilder')),
+    _       = require('lodash');
 
 describe('ModelBuilder', function() {
   describe('ModelBuilder instanciation', function() {
@@ -91,7 +92,7 @@ describe('ModelBuilder', function() {
       });
 
       it('should have the good validator', function() {
-        (validator).should.equal(model._.validator);
+        (_.isEqual(validator, model._.validator)).should.equal(true);
       });
 
       it('should have the good name', function() {
