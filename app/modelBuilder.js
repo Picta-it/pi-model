@@ -1,6 +1,6 @@
 'use strict';
 
-var pwd             = process.env.PWD,
+var pwd             = '..',
     path            = require('path'),
     AbstractBuilder = require(path.join(pwd, 'app/modelAbstractBuilder')),
     _model            = new WeakMap();

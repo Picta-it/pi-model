@@ -2,7 +2,7 @@
 
 require('chai').should();
 
-var pwd     = process.env.PWD,
+var pwd     = '../../..',
     path    = require('path'),
     Builder = require(path.join(pwd, 'app/modelBuilder')),
     _       = require('lodash');

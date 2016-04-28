@@ -2,7 +2,7 @@
 
 require('chai').should();
 
-var pwd             = process.env.PWD,
+var pwd             = '../../..',
     path            = require('path'),
     AbstractBuilder = require(path.join(pwd, 'app/modelAbstractBuilder'));
 

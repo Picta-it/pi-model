@@ -1,10 +1,8 @@
 'use strict';
 
-var pwd           = process.env.PWD,
-    path          = require('path'),
-    Helper        = require(path.join(pwd, 'app/helper')),
-    ModelBuilder  = require(path.join(pwd, 'app/modelBuilder')),
-    ModelDirector = require(path.join(pwd, 'app/modelDirector'));
+var dummyValidator = require('pi-validator-dummy'),
+    ModelBuilder   = require('./app/modelBuilder'),
+    ModelDirector  = require('./app/modelDirector');
 
 /**
  * Represent the new model being created.
@@ -28,10 +26,12 @@ class PiModel {
    * @return {Object}         New model built
    */
   constructor(options) {
-    options             = options             || {};
-    options.name        = options.name        || '';
-    options.description = options.description || {};
-    options.validator   = options.validator   || Helper.dummyValidator;
+    let defaultValidator = new dummyValidator(true);
+
+    options              = options             || {};
+    options.name         = options.name        || '';
+    options.description  = options.description || {};
+    options.validator    = options.validator   || defaultValidator;
 
     var builder       = new ModelBuilder(),
         modelDirector = new ModelDirector(builder);
