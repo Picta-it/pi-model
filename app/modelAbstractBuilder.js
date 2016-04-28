@@ -1,6 +1,6 @@
 'use strict';
 
-var pwd    = process.env.PWD,
+var pwd    = '..',
     path   = require('path'),
     Model  = require(path.join(pwd, 'app/model'));
 
