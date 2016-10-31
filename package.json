@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/Picta-it/pi-model#readme",
   "dependencies": {
-    "lodash": "^4.4.0",
+    "lodash": "^4.16.5",
     "pi-validator-dummy": "^1.0.3"
   },
   "devDependencies": {
