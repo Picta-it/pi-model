@@ -18,8 +18,8 @@ class ModelDirector {
     options = options || {};
 
     _builder.get(this).setName(options.name)
-                      .setDescription(options.description)
-                      .setValidator(options.validator);
+      .setDescription(options.description)
+      .setValidator(options.validator);
   }
   
   /**
