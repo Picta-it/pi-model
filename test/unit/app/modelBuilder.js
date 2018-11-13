@@ -33,7 +33,7 @@ describe('ModelBuilder', function() {
 
       name = 'dummy';
 
-      description = {};
+      description = '';
     });
 
     it('should have the setValidator function', function() {
@@ -100,10 +100,13 @@ describe('ModelBuilder', function() {
       });
 
       it('should have the good description', function() {
-        // TODO
-        // Move comparison to Object comparison
-        
-        // (description).should.equal(model._.description);
+        (description).should.equal(model._.description);
+      });
+
+      it('should not enumerate _', function() {
+        let foundPrivate = Object.keys(model).find((elm) => elm === '_');
+
+        (_.isUndefined(foundPrivate)).should.equal(true);
       });
     });
   });

@@ -36,6 +36,11 @@ var BuiltModel = function(context, data) {
 
   _.merge(this, buildModelContext(context), data);
 
+  Object.defineProperty(this, '_', {
+    enumerable: false,
+    writable:false
+  });
+
   return this;
 };
 
